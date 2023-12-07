@@ -1,2 +1,2 @@
 #!/bin/bash
-chmo -* +x
+chmo -R +X .
