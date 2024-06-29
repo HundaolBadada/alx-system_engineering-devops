@@ -1,5 +1,8 @@
-# installs the package puppet-lint
-package { 'puppet-lint':
-  ensure   => '2.1.0',
-  provider => 'gem',
+# creates a file in /tmp
+
+file { '/tmp/school':
+  content =>'I love Puppet',
+  mode    => '0744',
+  owner   => 'www-data',
+  group   => 'www-data',
 }
